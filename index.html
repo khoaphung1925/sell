@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt món ăn</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            width: 80px; /* Thêm width để cố định kích thước label */
+        }
+
+        input,
+        select {
+            margin-bottom: 10px;
+            flex: 1; /* Sử dụng flex để các input và select mở rộng đầy đủ */
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Canh chỉnh các phần tử theo chiều dọc */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-row">
+            <label for="food">Món:</label>
+            <select id="food">
+                <option value="food1">Món 1</option>
+                <option value="food2">Món 2</option>
+                <option value="food3">Món 3</option>
+                <option value="food4">Món 4</option>
+                <option value="food5">Món 5</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="small">Nhỏ</option>
+                <option value="medium">Trung bình</option>
+                <option value="large">Lớn</option>
+                <option value="xlarge">Siêu lớn</option>
+                <option value="xxlarge">Cực lớn</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="topping1">Topping - 1:</label>
+            <select id="topping1">
+                <option value="topping1_1">Topping 1 - Tùy chọn 1</option>
+                <option value="topping1_2">Topping 1 - Tùy chọn 2</option>
+                <option value="topping1_3">Topping 1 - Tùy chọn 3</option>
+                <option value="topping1_4">Topping 1 - Tùy chọn 4</option>
+                <option value="topping1_5">Topping 1 - Tùy chọn 5</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="topping2">Topping - 2:</label>
+            <select id="topping2">
+                <option value="topping2_1">Topping 2 - Tùy chọn 1</option>
+                <option value="topping2_2">Topping 2 - Tùy chọn 2</option>
+                <option value="topping2_3">Topping 2 - Tùy chọn 3</option>
+                <option value="topping2_4">Topping 2 - Tùy chọn 4</option>
+                <option value="topping2_5">Topping 2 - Tùy chọn 5</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="topping3">Topping - 3:</label>
+            <select id="topping3">
+                <option value="topping3_1">Topping 3 - Tùy chọn 1</option>
+                <option value="topping3_2">Topping 3 - Tùy chọn 2</option>
+                <option value="topping3_3">Topping 3 - Tùy chọn 3</option>
+                <option value="topping3_4">Topping 3 - Tùy chọn 4</option>
+                <option value="topping3_5">Topping 3 - Tùy chọn 5</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <label for="price">Giá:</label>
+            <input type="text" id="price">
+        </div>
+        <input type="submit" value="Đặt món">
+    </form>
+</body>
+</html>

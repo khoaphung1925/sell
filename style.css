@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+label {
+    margin-bottom: 5px;
+    width: 80px; /* Thêm width để cố định kích thước label */
+}
+
+input,
+select {
+    margin-bottom: 10px;
+    flex: 1; /* Sử dụng flex để các input và select mở rộng đầy đủ */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Canh chỉnh các phần tử theo chiều dọc */
+    margin-bottom: 10px;
+}
